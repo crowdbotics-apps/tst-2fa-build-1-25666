@@ -7,7 +7,7 @@ import { configureStore, createReducer, combineReducers } from "@reduxjs/toolkit
 
 import { screens } from "@screens";
 import { hooks, slices, navigators, initialRoute } from "@modules";
-
+//hello
 const Stack = createStackNavigator();
 
 const getNavigation = (modules, screens, initialRoute) => {
