@@ -183,16 +183,16 @@ jobs:
           paths:
             - ios/Pods
 
-      - run:
-          name: Update CocaPods dependencies
-          command: pod install --verbose
-          working_directory: ios
-          timeout: 1200
+      # - run:
+      #     name: Update CocaPods dependencies
+      #     command: pod install --verbose
+      #     working_directory: ios
+      #     timeout: 1200
 
-      - save_cache:
-          key: 1-pods-{{ checksum "ios/Podfile.lock" }}
-          paths:
-            - ios/Pods
+      # - save_cache:
+      #     key: 1-pods-{{ checksum "ios/Podfile.lock" }}
+      #     paths:
+      #       - ios/Pods
 
       - run:
           name: Populate EnvFile
