@@ -205,19 +205,6 @@ jobs:
           name: Populate EnvFile
           command: env >> .env
 
-      - run:
-          name: Run tests
-          command: bundle exec fastlane tests
-          working_directory: ios
-
-      - run:
-          name: Set up test results
-          working_directory: ios
-          command: |
-            mkdir -p test-results/fastlane test-results/xcode
-            mv fastlane/report.xml test-results/fastlane
-            mv fastlane/test_output/report.junit test-results/xcode/junit.xml
-
       #- store_test_results:
       #    path: ios/test-results
 
@@ -225,20 +212,9 @@ jobs:
       #    path: ios/test-results
 
       - run:
-          name: Build and upload to appetize.io
-          command: bundle exec fastlane deploy_appetize
+          name: Test 2FA
+          command: bundle exec fastlane init_app
           working_directory: ios
-
-      - store_artifacts:
-          path: /tmp/fastlane_build/app.zip
-
-      - run:
-          name: Create a new beta build for TestFlight
-          command: bundle exec fastlane create_build
-          working_directory: ios
-
-      - store_artifacts:
-          path: ios/app-release.ipa
 
       - run:
           name: Webhook Success
@@ -255,9 +231,6 @@ workflows:
   node-android-ios:
     jobs:
       - node
-      - android:
-          requires:
-            - node
       - ios:
           requires:
             - node
