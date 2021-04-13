@@ -1,4 +1,4 @@
-# tst_2fa_build_1_25666
+# tst_2fa_25666
 
 ## Getting started
 

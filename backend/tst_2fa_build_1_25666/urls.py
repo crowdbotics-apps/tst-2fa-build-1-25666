@@ -1,4 +1,4 @@
-"""tst_2fa_build_1_25666 URL Configuration
+"""tst_2fa_25666 URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.2/topics/http/urls/

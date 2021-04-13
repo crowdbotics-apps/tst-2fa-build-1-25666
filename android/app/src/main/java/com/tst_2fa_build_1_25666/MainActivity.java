@@ -1,4 +1,4 @@
-package com.tst_2fa_build_1_25666;
+package com.tst_2fa_25666;
 
 import com.facebook.react.ReactActivity;
 
@@ -10,6 +10,6 @@ public class MainActivity extends ReactActivity {
    */
   @Override
   protected String getMainComponentName() {
-    return "tst_2fa_build_1_25666";
+    return "tst_2fa_25666";
   }
 }
