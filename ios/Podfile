@@ -3,7 +3,7 @@ require_relative '../node_modules/@react-native-community/cli-platform-ios/nativ
 
 platform :ios, '10.0'
 
-target 'tst_2fa_25666' do
+target 'tst-2fa-25666' do
   config = use_native_modules!
 
   use_react_native!(
@@ -12,7 +12,7 @@ target 'tst_2fa_25666' do
     :hermes_enabled => false
   )
 
-  target 'tst_2fa_25666Tests' do
+  target 'tst-2fa-25666Tests' do
     inherit! :complete
     # Pods for testing
   end

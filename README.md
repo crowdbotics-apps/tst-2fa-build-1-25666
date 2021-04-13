@@ -1,4 +1,4 @@
-# tst_2fa_25666
+# tst-2fa-25666
 
 ## Getting started
 

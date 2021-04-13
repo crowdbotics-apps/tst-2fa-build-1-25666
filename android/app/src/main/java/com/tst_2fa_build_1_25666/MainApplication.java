@@ -1,4 +1,4 @@
-package com.tst_2fa_25666;
+package com.tst-2fa-25666;
 
 import android.app.Application;
 import android.content.Context;
@@ -62,7 +62,7 @@ public class MainApplication extends Application implements ReactApplication {
          We use reflection here to pick up the class that initializes Flipper,
         since Flipper library is not available in release mode
         */
-        Class<?> aClass = Class.forName("com.tst_2fa_25666.ReactNativeFlipper");
+        Class<?> aClass = Class.forName("com.tst-2fa-25666.ReactNativeFlipper");
         aClass
             .getMethod("initializeFlipper", Context.class, ReactInstanceManager.class)
             .invoke(null, context, reactInstanceManager);

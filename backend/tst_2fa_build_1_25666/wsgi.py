@@ -1,5 +1,5 @@
 """
-WSGI config for tst_2fa_25666 project.
+WSGI config for tst-2fa-25666 project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'tst_2fa_25666.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'tst-2fa-25666.settings')
 
 application = get_wsgi_application()

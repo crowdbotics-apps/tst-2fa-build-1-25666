@@ -131,7 +131,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.tst_2fa_25666"
+        applicationId "com.tst-2fa-25666"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

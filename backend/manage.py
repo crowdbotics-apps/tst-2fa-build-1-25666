@@ -5,7 +5,7 @@ import sys
 
 
 def main():
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'tst_2fa_25666.settings')
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'tst-2fa-25666.settings')
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
